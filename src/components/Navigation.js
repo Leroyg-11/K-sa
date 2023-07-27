@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import "../Sass/components/Navigation.scss";
 
 const Navigation = () => {
   return (
@@ -8,17 +9,12 @@ const Navigation = () => {
         <NavLink to="/">
           <li>Accueil</li>
         </NavLink>
-
-        <NavLink to="/service">
-          <li>Service</li>
-        </NavLink>
+        <br />
+        <br />
+        <br />
 
         <NavLink to="/about">
-          <li>About</li>
-        </NavLink>
-
-        <NavLink to="*">
-          <li>About</li>
+          <li>A propos</li>
         </NavLink>
       </ul>
     </div>
