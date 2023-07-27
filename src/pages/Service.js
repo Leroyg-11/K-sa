@@ -1,13 +1,13 @@
 import React from "react";
 import Navigation from "../components/Navigation";
 
-const About = () => {
+const Service = () => {
   return (
     <div>
       <Navigation />
-      <h1>About</h1>
+      <h1>Service</h1>
     </div>
   );
 };
 
-export default About;
+export default Service;

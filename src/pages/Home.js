@@ -1,9 +1,11 @@
 import React from "react";
+import Navigation from "../components/Navigation";
 
 const Home = () => {
   return (
     <div>
-      <h1>Hofgfdme</h1>
+      <Navigation />
+      <h1>Home menu</h1>
     </div>
   );
 };
