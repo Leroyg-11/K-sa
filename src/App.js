@@ -4,17 +4,20 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Error from "./pages/Error";
+import Layout from "./pages/Layout";
 
 const App = () => {
   return (
     <div className="app">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/about" element={<About />} />
 
-          <Route path="/about" element={<About />} />
-
-          <Route path="*" element={<Error />} />
+            <Route path="*" element={<Error />} />
+          </Route>
         </Routes>
       </BrowserRouter>
     </div>

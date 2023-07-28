@@ -1,0 +1,16 @@
+ul{
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.right_side{
+    display: flex;
+    a{
+        padding-left: 25px;
+        color: #FF6060;
+        text-decoration: none;
+    }
+}

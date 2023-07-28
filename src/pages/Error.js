@@ -1,11 +1,13 @@
 import React from "react";
-import Navigation from "../components/Navigation";
+import "./Error.scss";
 
 const Error = () => {
   return (
-    <div>
-      <Navigation />
-      <h1>Error 404</h1>
+    <div className="error">
+      <h1>404</h1>
+      <p>Oups! La page que vous demandez n'existe pas.</p>
+      <br />
+      <p>Retourner sur la page d’accueil</p>
     </div>
   );
 };
