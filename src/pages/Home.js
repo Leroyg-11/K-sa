@@ -1,24 +1,35 @@
 import React from "react";
-import bgBanner from "../asset/BackgroundBanner.png";
 import "./Home.scss";
-import Api from "../components/Api";
+import Api from "../components/FetchDataLogements";
+import FetchDataLogements from "../components/FetchDataLogements";
 
 const Home = () => {
   return (
     <main>
       <div className="banner">
-        {/* <img src={bgBanner} alt="Image falaise" /> */}
         <p>Chez vous, partout et ailleurs</p>
       </div>
-      <div className="article container">
+      <div className="article_container">
         <article>
-          <Api />
+          <h2>
+            <FetchDataLogements />
+          </h2>
         </article>
-        <article></article>
-        <article></article>
-        <article></article>
-        <article></article>
-        <article></article>
+        <article>
+          <h2>Nom de la location</h2>
+        </article>
+        <article>
+          <h2>Nom de la location</h2>
+        </article>
+        <article>
+          <h2>Nom de la location</h2>
+        </article>
+        <article>
+          <h2>Nom de la location</h2>
+        </article>
+        <article>
+          <h2>Nom de la location</h2>
+        </article>
       </div>
     </main>
   );
