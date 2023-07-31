@@ -15,21 +15,6 @@ const Home = () => {
             <FetchDataLogements />
           </h2>
         </article>
-        <article>
-          <h2>Nom de la location</h2>
-        </article>
-        <article>
-          <h2>Nom de la location</h2>
-        </article>
-        <article>
-          <h2>Nom de la location</h2>
-        </article>
-        <article>
-          <h2>Nom de la location</h2>
-        </article>
-        <article>
-          <h2>Nom de la location</h2>
-        </article>
       </div>
     </main>
   );
