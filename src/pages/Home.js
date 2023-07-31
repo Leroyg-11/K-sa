@@ -1,7 +1,6 @@
 import React from "react";
 import "./Home.scss";
-import Api from "../components/FetchDataLogements";
-import FetchDataLogements from "../components/FetchDataLogements";
+import Gallery from "../components/Gallery";
 
 const Home = () => {
   return (
@@ -9,12 +8,8 @@ const Home = () => {
       <div className="banner">
         <p>Chez vous, partout et ailleurs</p>
       </div>
-      <div className="article_container">
-        <article>
-          <h2>
-            <FetchDataLogements />
-          </h2>
-        </article>
+      <div className="gallery_grid">
+        <Gallery />
       </div>
     </main>
   );

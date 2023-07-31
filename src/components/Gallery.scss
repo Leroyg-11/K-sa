@@ -1,0 +1,14 @@
+.grid{
+    margin: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+    text-align: center;
+    border: 1px solid rgb(0, 34, 255);
+    border-radius: 1rem;
+    background-color: rgb(223, 223, 211);
+    filter: brightness(100%);
+    width: auto;
+    height: auto;
+}
