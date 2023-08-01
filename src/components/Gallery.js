@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "./Gallery.scss";
 import GalleryCard from "./GalleryCard";
+import { useLocation, useParams } from "react-router-dom";
 
 function Gallery() {
+  const location = useLocation();
+  console.log("location:", location);
+
   const [apartments, setApartments] = useState([]);
 
   useEffect(fetchApartments, []);
@@ -16,19 +20,14 @@ function Gallery() {
   return (
     <div className="grid">
       {apartments.map((apartment) => (
-        <GalleryCard title={apartment.title} imageUrl={apartment.cover} />
+        <GalleryCard
+          title={apartment.title}
+          imageUrl={apartment.cover}
+          id={apartment.id}
+        />
       ))}
     </div>
   );
 }
-
-// const Gallery = () => {
-//   return (
-//     <div className="grid">
-//       <h1></h1>
-//       <GalleryCard />
-//     </div>
-//   );
-// };
 
 export default Gallery;

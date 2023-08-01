@@ -1,4 +1,6 @@
-.error{
-    text-align: center;
-    color: #FF6060;
+@use "../components/Color.scss" as *;
+
+.error {
+  text-align: center;
+  color: $color-primary;
 }

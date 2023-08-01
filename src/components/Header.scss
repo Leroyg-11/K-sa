@@ -1,3 +1,5 @@
+@use "../components/Color.scss" as *;
+
 ul{
     padding: 0px;
     display: flex;
@@ -10,7 +12,7 @@ ul{
     display: flex;
     a{
         padding-left: 25px;
-        color: #FF6060;
+        color: $color-primary;
         text-decoration: none;
     }
 }

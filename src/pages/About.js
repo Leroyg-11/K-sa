@@ -1,9 +1,12 @@
 import React from "react";
+import AboutGrid from "../components/AboutGrid";
+import "./About.scss";
 
 const About = () => {
   return (
     <div className="about">
-      <h1>A propos</h1>
+      <div className="bannerAbout"></div>
+      <AboutGrid />
     </div>
   );
 };

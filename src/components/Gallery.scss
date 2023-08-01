@@ -1,14 +1,17 @@
+@use "../components/Color.scss" as *;
+
 .grid{
     margin: 15px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    overflow: scroll;    
     gap: 15px;
     text-align: center;
     border: 1px solid rgb(0, 34, 255);
     border-radius: 1rem;
-    background-color: rgb(223, 223, 211);
+    background-color: $grid-background-light;
     filter: brightness(100%);
-    width: auto;
-    height: auto;
+    max-width: 1120px;
+    max-height: 500px;
 }

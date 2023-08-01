@@ -1,16 +1,20 @@
+@use "../components/Color.scss" as *;
+
 footer{
-    opacity: 0;
-    // position: absolute;
-    // bottom: 0;
-    // width: 100%;
-    // background: #000;
-    // color: #ffffff;
-    // ul{
-    //     display: flex;
-    //     flex-direction: column;
-    // }
-    // li{
-    //     padding: 15px;
-    // }
+    position: absolute;
+    left: 0;
+    width: 100%;
+    max-height: 210px;
+    background: #000;
+    color: #ffffff;
+    margin-top: 50px;
+    border-radius: 5px 5px 0 0 ;
+    ul{
+        display: flex;
+        flex-direction: column;
+    }
+    li{
+        padding: 15px;
+    }
 
 }

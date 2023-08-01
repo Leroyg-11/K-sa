@@ -1,0 +1,44 @@
+@use "../components/Color.scss" as *;
+
+.about_grid {
+  article {
+    .title {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 20px;
+      background-color: $color-primary;
+      border-radius: 5px;
+      margin: 25px auto 0 auto;
+      width: 85%;
+      height: 55px;
+      align-items: center;
+      color: $color-tertiary;
+      z-index: 1;
+      overflow: hidden;
+
+      img {
+        object-fit: none;
+        cursor: pointer;
+      }
+    }
+    @keyframes slide-in {
+      from {
+        overflow: hidden;
+        transform: translateY(-60%);
+      }
+    }
+    p {
+      position: relative;
+      border-radius: 5px;
+      width: 85%;
+      margin: 0 auto;
+      background-color: $grid-background-light;
+      color: $color-primary;
+      font-size: 20px;
+      padding: 2% 1%;
+      overflow: hidden;
+      animation: slide-in 0.5s ease-in-out;
+    }
+  }
+}
