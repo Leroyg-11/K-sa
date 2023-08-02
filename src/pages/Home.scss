@@ -1,13 +1,13 @@
-.banner{
-    text-align: center;
-    border-radius: 15px;
-    background: url(../asset/BackgroundBanner.png) center/cover;
-    height: 35vh;
-    p{
-        position: relative;
-        top: 40%;
-        color: white;
-        font-size: 2rem;
-    }
+.banner {
+  text-align: center;
+  border-radius: 15px;
+  background: url(../asset/BackgroundBanner.png) center/cover;
+  height: 35vh;
+  margin-bottom: 50px;
+  p {
+    position: relative;
+    top: 40%;
+    color: white;
+    font-size: 2rem;
+  }
 }
-

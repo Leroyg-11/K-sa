@@ -1,0 +1,141 @@
+@use "../components/Color.scss" as *;
+
+.apartment_content {
+  color: $color-primary;
+
+  .apartment_img {
+    margin-bottom: 2rem;
+    position: relative;
+    height: 20rem;
+    width: 100%;
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 1rem;
+      box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+      opacity: 0;
+      .show {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.apartment_info_container {
+  .info_general {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+  }
+  .apartment_title {
+    display: flex;
+    flex-direction: column;
+    h1 {
+      margin: 0;
+    }
+    h2 {
+      font-weight: 200;
+      margin: 0;
+    }
+  }
+  .owner_info {
+    display: flex;
+    align-items: center;
+    h3 {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    img {
+      width: 65px;
+      height: 65px;
+      border-radius: 50%;
+      margin-left: 20px;
+    }
+  }
+}
+
+.tag_stars {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .apartment_tag {
+    display: flex;
+    span {
+      padding: 5px 35px;
+      border-radius: 10px;
+      margin: 5px 5px 5px 0;
+
+      background-color: $color-primary;
+      color: $color-tertiary;
+    }
+  }
+  .apartment_owner_stars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+    color: $grid-background-dark;
+    flex-direction: row-reverse;
+
+    * {
+      font-size: 2rem;
+    }
+    .on {
+      color: $color-primary;
+    }
+  }
+}
+
+.apartment_text {
+  display: flex;
+  gap: 25px;
+
+  //   width: 100%;
+
+  //   gap: 50px;
+
+  .article_description {
+    flex-basis: 50%;
+  }
+
+  .title_arrow {
+    padding: 0 0 0 25px;
+    display: flex;
+    position: relative;
+    background-color: $color-primary;
+    color: $color-tertiary;
+    justify-content: space-between;
+    border-radius: 5px;
+    z-index: 1;
+    overflow: hidden;
+  }
+  img {
+    padding: 20px;
+    object-fit: none;
+    cursor: pointer;
+  }
+
+  @keyframes slide-in {
+    from {
+      overflow: hidden;
+      transform: translateY(-60%);
+    }
+  }
+  .paragraphe_description {
+    position: relative;
+    border-radius: 5px;
+    width: 85%;
+    margin: 0 auto;
+    background-color: $grid-background-light;
+    color: $color-primary;
+    font-size: 20px;
+    padding: 2% 1%;
+    overflow: hidden;
+    animation: slide-in 0.5s ease-in-out;
+  }
+}

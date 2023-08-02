@@ -1,0 +1,28 @@
+@use "../components/Color.scss" as *;
+
+.grid {
+  background-color: $grid-background-dark;
+  min-height: 50vh;
+  border-radius: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  justify-content: space-between;
+  & > * {
+    width: 100%;
+    max-width: 20rem;
+  } // margin: 15px;
+  // display: grid;
+  // grid-template-columns: 1fr 1fr 1fr;
+  // grid-template-rows: 1fr 1fr;
+  // overflow: scroll;
+  // gap: 15px;
+  // text-align: center;
+  // border: 1px solid rgb(0, 34, 255);
+  // border-radius: 1rem;
+  // background-color: $grid-background-light;
+  // filter: brightness(100%);
+  // max-width: 1120px;
+  // max-height: 500px;
+}

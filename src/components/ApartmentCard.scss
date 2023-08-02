@@ -1,0 +1,35 @@
+@use "../components/Color.scss" as *;
+
+.card {
+  // display: flex;
+  // box-sizing: border-box;
+  // border: 1px rgb(255, 0, 0) solid;
+  // background-color: $grid-background-dark;
+  // margin: auto;
+  // width: 90%;
+  // height: 100%;
+  // border-radius: 1rem;
+  // flex-direction: column;
+  // align-items: center;
+  border-radius: 1rem;
+  flex-basis: 30%;
+  display: grid;
+  align-items: end;
+  min-width: 200px;
+  min-height: 200px;
+  background-size: cover;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    box-shadow: 10px;
+  }
+  &_title {
+    color: $color-tertiary;
+    position: absolute;
+    text-align: center;
+  }
+}
